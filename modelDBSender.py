@@ -68,7 +68,7 @@ def save(titleList, itemList):
     return name
 
 if __name__ == '__main__':
-
+    # 创建数据库链接池  5 为连接池里的最少连接数
     pool = PooledDB(pymysql, 5, host='121.196.232.93', user='readonly', passwd='J8mRjfWeBwNnQi2', db='simeitol_uc', port=3306)
     pool = PooledDB(pymysql, 5, host='121.196.232.93', user='readonly', passwd='J8mRjfWeBwNnQi2', db='zmt_shop', port=3306)
 

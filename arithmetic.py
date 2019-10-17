@@ -65,3 +65,23 @@ index = binary_search(my_list, 24)
 # print(index)
 print(find)
 print(quickSort(find))
+
+
+def short(arr=[]):
+    arr.sort()
+    last = arr[-1]
+    for i in range(len(arr) - 2, -1, -1):
+        if last == arr[i]:
+            del arr[i]
+        else:
+            last = arr[i]
+            print(arr)
+
+
+
+
+if __name__ == '__main__':
+    arr = [1, 34, 34, 2, 3, 52, 66, 33, 2, 1, 22, 4, 44, 22, 33, 32, 34, 66]
+    short(arr)
+    # del arr[2]
+    # print(arr)
