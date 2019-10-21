@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import json
+import numpy as np
 
 def binary_search(list, item):
     low = 0
@@ -77,11 +78,26 @@ def short(arr=[]):
             last = arr[i]
             print(arr)
 
+def npTest():
+    # a = np.arange([24, 3])
+    # print(a.ndim)
+
+    # b = a.reshape(2 ,1)
+
+    # print(b)
+
+    c = np.array([[1, 2, 3], [4, 5, 6]])
+    # c.shape = (3, 2)
+    b = c.reshape(3, 2)
+    print(b)
 
 
+    d = np.array([1, 2, 3, 4, 5, 6, 7])
+    print(d.flags)
 
 if __name__ == '__main__':
-    arr = [1, 34, 34, 2, 3, 52, 66, 33, 2, 1, 22, 4, 44, 22, 33, 32, 34, 66]
-    short(arr)
+    npTest()
+    # arr = [1, 34, 34, 2, 3, 52, 66, 33, 2, 1, 22, 4, 44, 22, 33, 32, 34, 66]
+    # short(arr)
     # del arr[2]
     # print(arr)
